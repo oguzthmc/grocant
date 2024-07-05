@@ -125,8 +125,11 @@ img {
 }
 
 .topBar .otherInfo button {
+  display: flex;
+  align-items: center;
   background: #f14705;
   border: none;
+  gap: 5px;
   cursor: pointer;
   transition: opacity 0.3s linear;
 }
