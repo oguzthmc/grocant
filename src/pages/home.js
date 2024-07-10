@@ -2,6 +2,7 @@ import Hero from '../components/home/hero';
 import Information from '../components/home/information';
 import ProductCategories from '../components/home/productCategories';
 import RecentProducts from '../components/home/recentProducts';
+import SaleProducts from '../components/home/saleProducts';
 
 function AppHome() {
   return (
@@ -10,6 +11,7 @@ function AppHome() {
       <RecentProducts />
       <Information />
       <ProductCategories />
+      <SaleProducts />
     </div>
   );
 }
