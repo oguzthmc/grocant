@@ -3,6 +3,7 @@ import Information from '../components/home/information';
 import ProductCategories from '../components/home/productCategories';
 import RecentProducts from '../components/home/recentProducts';
 import SaleProducts from '../components/home/saleProducts';
+import TopBrands from '../components/home/topBrands';
 
 function AppHome() {
   return (
@@ -12,6 +13,7 @@ function AppHome() {
       <Information />
       <ProductCategories />
       <SaleProducts />
+      <TopBrands />
     </div>
   );
 }
