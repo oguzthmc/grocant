@@ -349,7 +349,7 @@ img {
 
 .footerWidget h3,
 .footerWidget .ant-list-item-meta-title a {
-  color: #d7d7d7;
+  color: #d7d7d7 !important;
 }
 
 .footerWidget h3 {
@@ -358,7 +358,7 @@ img {
 }
 
 .footerWidget .ant-list-item-meta-description {
-  color: #f14705;
+  color: #f14705 !important;
 }
 
 .footerWidget .ant-list-split .ant-list-item {

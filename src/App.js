@@ -8,6 +8,7 @@ import AppAbout from './pages/about';
 import AppShop from './pages/shop';
 import AppFaq from './pages/faq';
 import AppContact from './pages/contact';
+import FooterWidget from './components/common/footerWidget';
 
 const { Header, Footer, Content } = Layout;
 
@@ -29,7 +30,9 @@ function App() {
             </Routes>
           </Content>
         </Router>
-        <Footer>Footer</Footer>
+        <Footer>
+          <FooterWidget />
+        </Footer>
       </Layout>
     </div>
   );
