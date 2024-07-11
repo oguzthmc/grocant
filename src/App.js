@@ -9,6 +9,7 @@ import AppShop from './pages/shop';
 import AppFaq from './pages/faq';
 import AppContact from './pages/contact';
 import FooterWidget from './components/common/footerWidget';
+import FooterCopyright from './components/common/footerCopyright';
 
 const { Header, Footer, Content } = Layout;
 
@@ -32,6 +33,7 @@ function App() {
         </Router>
         <Footer>
           <FooterWidget />
+          <FooterCopyright />
         </Footer>
       </Layout>
     </div>
