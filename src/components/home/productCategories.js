@@ -70,7 +70,7 @@ function ProductCategories() {
       <Row gutter={[24, 24]}>
         {productCategories.map((pc) => {
           return (
-            <Col lg={4} key={pc.key}>
+            <Col xs={12} sm={6} lg={4} key={pc.key}>
               <div className="content">
                 <div className="image">
                   <img src={pc.image} alt={pc.title} />

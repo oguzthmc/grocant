@@ -110,10 +110,10 @@ function AppShop() {
             <Button>Sort by</Button>
           </Dropdown>
         </div>
-        <Row gutter={24}>
+        <Row gutter={[24, 24]}>
           {products.map((p) => {
             return (
-              <Col lg={6} key={p.key}>
+              <Col xs={24} sm={12} lg={6} key={p.key}>
                 <div className="content">
                   <div className="image">
                     <img src={p.image} alt="productImage" />
