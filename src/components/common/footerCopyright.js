@@ -5,7 +5,7 @@ function FooterCopyright() {
   return (
     <div className="footerCopyright">
       <div className="container">
-        <div className="copyright">©2024 Created by Grocant</div>
+        <div className="copyright">©2024 Created by Grocant, Developed by Oğuzhan Tohumcu</div>
         <div className="toTop">
           <img src={payment} alt="payment" />
         </div>
