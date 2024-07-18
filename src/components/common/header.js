@@ -3,12 +3,23 @@ import {
   FacebookFilled,
   InstagramFilled,
   MailOutlined,
+  MenuOutlined,
   MobileOutlined,
   TwitterSquareFilled,
   UserOutlined,
 } from '@ant-design/icons';
+import { useState } from 'react';
+import { Button, Drawer } from 'antd';
 
 function AppHeader() {
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="container">
       {/* topbar */}
@@ -56,7 +67,41 @@ function AppHeader() {
       {/* header */}
       <div className="header separator">
         <div className="logo">Grocant</div>
-        <nav>
+        <div className="mobileVisible">
+          <Button type="text" icon={<MenuOutlined />} onClick={showDrawer} />
+          <Drawer title="Menu" onClose={onClose} open={open}>
+            <nav>
+              <ul>
+                <li>
+                  <NavLink to="/" onClick={onClose}>
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about" onClick={onClose}>
+                    About
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/shop" onClick={onClose}>
+                    Shop
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/faq" onClick={onClose}>
+                    FAQ
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact" onClick={onClose}>
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+          </Drawer>
+        </div>
+        <nav className="mobileHidden">
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
